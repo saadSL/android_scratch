@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+
+    <string name="launcher_name">ABL Cordova</string>
+    <string name="activity_name">ABL Cordova</string>
+    <string name="app_name">ABL Cordova</string>
+    <string name="OTP_link"><a href="#">Click here</a>To Resend OTP</string>
+    <string name="dummy_txt">Biometric Verification successfully done.</string>
+    <string name="OTP_number">03XX-XXXXXXX</string>
+    <string name="OTP_heading">Verify OTP</string>
+    <string name="OTP_question">Did not recieve OTP ?</string>
+    <string name="otp_inst">Enter <b>OTP</b> recieved on your provided mobile number</string>
+    <string name="otp_insta">Enter <b>OTP</b> recieved on your provided mobile number</string>
+    <string name="please_grant_external_storage_permissions">In order to use this application, please grant External storage permission.</string>
+</resources>

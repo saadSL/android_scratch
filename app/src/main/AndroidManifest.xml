@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ofss.digx.mobile.android.allied"
+    android:hardwareAccelerated="true"
+    android:versionCode="10000"
+    android:versionName="1.0.0">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!--    till here -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <meta-data
+            android:name="faceoff-license-key"
+            android:value="MTc3LDQ0LDUyLDEwNywxMTcsMCwxOTYsMTMzLDIxOCwxMTYsMTQ5LDE0Niw0NywyMjksNjIsNzUsMjM1LDExMyw2LDg3LDUxLDMyLDk3LDE3MiwxNjQsOCwxMSwxOTAsNDgsOTksMTk4LDE5MSwxMjMsMTczLDI0MSwxMzQsMTk4LDMsMzUsMTc1LDIwMyw0LDE5LDIwNSwyMzksODYsNjAsMjEsMTMsNTUsMTIzLDE4MiwxMjUsMTg0LDEzMiwxMDQsMjU1LDEzNSw3Miw0OCwzMSwyNDMsNDMsMjMzLDczLDUyLDEzNCwyMjMsMzcsMTc0LDExMCw1MSw0NSw3OSw1Myw1OCwxNTYsMTA1LDE4NywyMDMsMTYxLDE1NywxMDEsMTEzLDIxOCwyMjQsMjAzLDI0MSwxMDIsMTQsMTY2LDE3NSwxNDEsMTUzLDIxMywzMSwxODYsMjUsMTYyLDE3Miw3LDIzNCwxODEsMTAsMTgyLDkwLDEzNywyMzEsMTYsMjYsMzUsNjEsOTksMTA0LDE5MCwzMiwyNTIsMTQ3LDI0NiwyMjksMTAsMTEyLDc1LDE0MywyMzksMTkyLDE1Nyw2MiwzNSw5NywxNDEsOTcsMTQzLDE3MiwyMTMsMjEzLDE0OCwyMzksNTIsMTM4LDQ1LDEyOSwxNDcsMzgsMTIxLDE2NCwxMzUsMTU5LDIzNywyNDAsMTk5LDEzLDEzMiwxOTgsMCwxODQsNTMsMTA1LDk3LDI1NCwyMjcsODMsMjMsODksMjMxLDE3MSwxNjcsMTIxLDE2NywyMzYsNzYsMTU3LDI1MCwyMDQsODksMjMzLDg0LDE0NSwzNiwxNjQsNDIsMTQ5LDM4LDE5NiwxOTgsNzQsNzcsMTE1LDE4MCwyMjIsMjEsMTcxLDI1NCwxODUsMjQyLDE1OSwxNDYsOTgsMTUyLDI0OSwyMDEsNzIsMTUwLDY0LDU5LDE4NSwxLDExMCwxNjYsMTI3LDcwLDUzLDMxLDg1LDE4MSwxNjcsMzcsMjA1LDksMTU3LDExLDQ4LDYsMSwxMTEsMTQ0LDM3LDE5MiwxOTMsMjksMjMyLDE5NSwyMjUsMjA1LDE4MCw2MSw4MCw4NCwxNjAsMTg0LDE5NiwxNjgsMjAyLDEzMSwyMyw3NSw4LDE0NSwxMTMsODgsODksMjQ4LDEwMiw4MiwxOTQsMjUxLDEsMCwxLA==" />
+
+        <activity
+            android:name="MainActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+            android:label="@string/activity_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter android:label="@string/launcher_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unikrew.faceoff.ui.FingerPrintActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.unikrew.faceoff.ui.OtpVerificationActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.unikrew.faceoff.CNIC_Availability"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.unikrew.faceoff.ui.ViewFingerprintActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+</manifest>
